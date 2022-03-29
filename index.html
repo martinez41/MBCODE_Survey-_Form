@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Survey Form</title>
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+		<!--User Story #1--> <h1 id="title" class="text-center">scientist Survey Form</h1>
+		<!--User Story #2--> <p id="description" class="description text-center">
+		   Thank you for taking the time to help us improve the platform
+		 </p>
+	   </header>
+		<!--User Story #3--><form action="" id="survey-form">
+		  <div class="form-group">
+		   <label id="name-label" for="name">Name</label>
+		  <!--User Story #4--> <input
+			 type="text"
+			 name="name"
+			 id="name"
+			 class="form-control"
+			 placeholder="Enter your name"
+			 required
+		   />
+		 </div>
+		  <div class="form-group">
+		   <label id="email-label" for="email">Email</label>
+		  <!--User Story #5--> <input
+			 type="email"
+			 name="email"
+			 id="email"
+			 class="form-control"
+			 placeholder="Enter your Email"
+			 required
+		   />
+		 </div>
+		  <div class="form-group">
+		   <label id="number-label" for="number"
+			 >Age<span class="clue">(optional)</span></label
+		   >
+		   <input
+			 type="number"
+			 name="age"
+			 id="number"
+			 min="10"
+			 max="99"
+			 class="form-control"
+			 placeholder="Age"
+		   />
+		 </div>
+		  <div class="form-group">
+		   <p>Which option best describes your current domain?</p>
+		   <select id="dropdown" name="role" class="form-control" required>
+			 <option disabled selected value>Select current domain</option>
+			 <option value="mathematics">Mathematics and their interactions</option>
+			 <option value="physics">Physics</option>
+			 <option value="space">Earth and universe sciences, space</option>
+			 <option value="chemistry">Chemistry</option>
+			 <option value="biology">Biology, medicine and health</option>
+			 <option value="humanities">Humanities and Humanities</option>
+			 <option value="social">Social Sciences</option>
+			 <option value="engineers">Sciences for engineers</option>
+			 <option value="heritage">Scientific heritage management</option>
+			 <option value="agricultural">Agricultural and ecological sciences</option>
+			 <option value="information">Information and communication sciences and technologies</option>
+		   </select>
+		 </div>
+		 <div class="form-group">
+			<p >Would you recommend to a friend our help program  ?</p>
+			<label><input
+				type="radio"
+				name="user-recommend"
+				class="input-radio"
+				value="definitely"
+				checked
+			  />Definitely
+			</label>
+			<label><input
+				type="radio"
+				name="user-recommend"
+				class="input-radio"
+				value="definitely"
+			  />Maybe
+			</label>
+			<label><input
+				type="radio"
+				name="user-recommend"
+				class="input-radio"
+				value="definitely"
+			  />Not sure
+			</label>
+			
+		  </div>
+		 <div class="form-group">
+			<p>What is your favorite way of learning?<span class="clue">*</span></p>
+			<label><input
+				type="checkbox"
+				name="prefer"
+				class="input-checkbox"
+				value="online"
+			  />Online on our platform
+			</label>
+			<label><input
+				type="checkbox"
+				name="prefer"
+				class="input-checkbox"
+				value="center"
+				checked
+			  />At the training center
+			</label>
+			<label><input
+				type="checkbox"
+				name="prefer"
+				class="input-checkbox"
+				value="seminar"
+			  />Training seminar
+			</label>
+			<label><input
+				type="checkbox"
+				name="prefer"
+				class="input-checkbox"
+				value="mentor"
+			  />Mentor support
+			</label>
+		</div>
+		<div class="form-group">
+			<p>Any comments or suggestions?</p>
+			<textarea name="comments" id="comments" rows="10" class="input-textarea" >
+			</textarea>
+		</div>
+		<div class="form-group">
+			<button type="submit" id="submit" class="submit-button">
+			  Submit
+			</button>
+		  </div>
+	   </form>
+	 </div>
+	 
+</body>
+</html>
